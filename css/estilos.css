@@ -1,115 +1,110 @@
 *{
-  margin:0px;
-  padding: 0%;
+margin:0px;
+padding: 0%;
 }
 body{
-  background-color:whitesmoke;
-  font-family: Montserrat;
+background-color:whitesmoke;
+font-family: Montserrat;
 }
-
 header{
 height: 100px;
 width: 100%;
-text-align: center;
+/*text-align: center;*/
 line-height: 40px;
-background:yellow;
-color: black;
+background: whitesmoke;
+/*background: rgb(153, 152, 152);*/
+color: #4a4a4a;
 border-top: 5px solid white;
 position: fixed;
 }
- 
-.logo{
-  text-decoration: none;
+.contenedor-header{
+text-decoration: none;
+padding-left: 5%;
 }
-/*header img{ 
-  float: left;  
-  width: 60px; 
-}*/
-
-/*nav{
-
-  background-color:white;
-  height: 70px;
-  line-height: 120;
-  border-bottom:4px solid whitesmoke;
-  border-top: 4px solid whitesmoke;
-  
-}*/
+.contenedor-header i{
+color: #4a4a4a;
+font-size: 250%;
+text-align: center;
+padding-top: 1%;
+}
+.contenedor-header h2{
+float: left;
+padding-right: 5%;
+padding-top: 1%;
+} 
+.contenedor-header label{
+float: right;
+padding-right: 5%;
+padding-top: 1%;
+} 
 /*elemento nav clase "navigation"*/
 nav.navigation{
-  background-color:white;
-  height: 70px;
-  border-bottom:4px solid whitesmoke;
-  border-top: 4px solid whitesmoke;
-  background:pink;
-  
+background-color:white;
+height: 70px;
+border-bottom:4px solid whitesmoke;
+border-top: 4px solid whitesmoke;
+background: white;
 }
-
 nav ul li {
- float: right;
- list-style: none;
- margin: 20px;
- line-height: 30px;
- border: 1px solid red;
- 
+float: right;
+list-style: none;
+margin: 20px;
+line-height: 30px;
+/*border: 1px solid red;*/
 }
 nav ul li a{
-  text-decoration: none;  
-  color: black;
-  background-color:grey;
- 
+text-decoration: none;  
+color: black;
 }
-
-
 #main{
-  width: 1100px;
-  height: 1500px;
-  padding-top: 200px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  background: white;
-  margin: 0px auto;
-  border: 1px solid blue;
+width: 1100px;
+height: 2425px;
+padding-top: 200px;
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 30px;
+background: white;
+margin: 0px auto;
+/*border: 1px solid blue;*/
 }
 .clearfix{
   clear: both;
 }
 #section-principal{
   width: 75% ;
-  height: 1500px;
+  height: 2400px;
   float: left;
-  background: orange;
-  border: 1px solid red;
-  
+   background: white;
+ /*background: orange;*/
+  /*border: 1px solid red;*/
 }
-
 .section1{
-  float: left ;
-  width: 100% ;
-  min-height: 500px;
-  background: white;
-  padding: 1%;
-  text-align: justify;
-    
+float: left ;
+width: 98% ;
+/*min-height: 500px;*/
+background: white;
+padding: 1%;
+text-align: justify;
+/*background:fuchsia;*/
 }
-
+.section1 img{
+  width: 80% ;
+  border-radius: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 .section2{
   float: left ;
   width: 100% ;
-  height:330px ;
+  height:350px ;
   /*min-height: 300px;*/
-  background:green;
- 
+  padding-top: 7%;
+  background:white;
 }
-
 .section2 .box-article{
   width: 28%;
- 
+  text-align: center;
 }
-/*.section2 .box-article p{
-  text-align: justify;
-}*/
 .box-article p{
   /*text-align: justify;*/
   text-align: center;
@@ -117,58 +112,124 @@ nav ul li a{
 .box-article h2{
   /*text-align: justify;*/
   text-align: center;
+  color: #4a4a4a;
 }
-
 .box-article img{
 width: 100%;
-
 }
-
 .section3{
   float: left;
   width: 100% ;
-  height: 350px;
+  height: 200px;
   min-height: 200px;
-  background:blue;
+  background:white;
   text-align: center;
+  color: #4a4a4a;
 }
-.boton-quiero{
+.section3 .box-article{
+  width: 50%;
+  height: 60%;
+  text-align: center;
+  border-color: grey;
+  padding: 1%;
+  margin-bottom: 1%;
+  margin-left: 26%;
+  border-radius: 30px;
+  border: 1px solid grey;
+}
+.section3 .box-article a{
+  padding: 3%;
+  margin-bottom: 9%;
+  color:white;
+}
+.section4{
+  float: left;
+  width: 98% ;
+  height: 700px;
+  /*min-height: 200px;*/
+  background:white;
+  text-align: justify;
+  padding: 1%;
+}
+.section4 img{
+  width: 60% ;
+  border-radius: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.informate{
+  /*en el html le indico que tenga las mismas propiedades que el botón contratar*/
   text-decoration:none;
-  font-weight: 600;
+  font-weight: 600px;
   font-size: 20px;
-  color:#333333;
+  color: white;
   padding-top:15px;
   padding-bottom:15px;
   padding-left:40px;
   padding-right:40px;
-  background-color: rgb(99, 99, 252);
-  /*border-color: #d8d8d8;*/
-  /*border-width: 3px;*/
-  /*border-style: solid;*/
+  border-radius:35px;
+  float: left;
+  margin-top: 5%;
+  margin-left: 12%;
+  background-color: rgb(81, 81, 236);
+}
+.contratar{
+  text-decoration:none;
+  font-weight: 600px;
+  font-size: 20px;
+  color: white;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:40px;
+  padding-right:40px;
+  background-color: rgb(81, 81, 236);
   border-radius:35px;
 }
-
 .box-article{
   float: left;
-  width: 200px;
-  height: 100px;
+  width: 230px;
+  height: 160px;
   margin: 1em;
+  /*border: 1px solid grey;*/
+}
+.box-article i{
+  color:  #4a4a4a;
+  font-size: 550%;
+  margin-bottom: 5%;
 }
 .after-box{
   clear: left;
 }
-
-.section4{
-  width: 100%;
-  height: 300px;
-  float: left;
-  background: burlywood;
+h2{
+  color:  #4a4a4a;
 }
-
+.section5{
+  width:100%;
+  height: 205px;
+  float: left;
+  text-align: center;
+  padding: 0%;
+  margin-top: 8%;
+  background:white;
+}
+.box-article-s5{
+  float: left;
+  /*text-align: center;*/
+  /*width: 200px;
+  height: 160px;
+  margin: 1em;*/
+  padding: 0%;
+  width: 24%;
+  height: 70%;
+  margin-left: 0.7%;
+  /*border: 1px solid red;*/
+}
+.precio{
+  color: red;
+}
 #aside-lateral{
   float: right;
   /*width: calc(20% - 20px);/*usamos calc para reajustar el padding*/
-  
   /*padding: 10px; padding le dará unos márgenes interiores por todos los lados si no se especifica otra cosa*/
   /*padding-left:10px ;
   padding-right: 10px;
@@ -178,47 +239,85 @@ width: 100%;
   height: 98%;
   padding: 1%;
   border-radius: 30px;
-  border: 1px solid green;
- 
+  /*border: 1px solid green;*/
 }
-
 .asideA{
-  background:grey;
+  background: whitesmoke;
   border-radius: 25px;
   /*width: 100%;*/
-  height: 18%;
+  height: 21%;
   margin-top: 5%;
   margin-bottom: 10%;
   padding: 5%;
   /*padding-top: 10%;
   padding-left: 1.5%;*/
 }
-
-
+.asideA input{
+  /*text-decoration:none;*/
+  width: 90% ;
+  border-radius: 25px;
+  font-size: 18px;
+  margin: 4px;
+}
+.enviar{
+  /*en el html le indico que tenga las mismas propiedades que el botón contratar*/
+  background-color: rgb(81, 81, 236);
+  float: left;
+  margin-top: 5%;
+  margin-left: 12%;
+}
+.llamadme{
+  text-decoration:none;
+  font-weight: 600px;
+  font-size: 20px;
+  color: white;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:40px;
+  padding-right:40px;
+  background-color: rgb(81, 81, 236);
+  border-radius:35px;
+}
 .asideB{
-background: brown;
-height: 30%;
-border-radius: 25px;
-padding: 5%;
-margin-bottom: 10%;
+  background:whitesmoke;
+  height: 23%;
+  border-radius: 25px;
+  padding: 5%;
+  margin-bottom: 10%;
 }
-
+.asideB a{
+  color:  #4a4a4a;
+}
+.asideC{
+  background:whitesmoke;
+  height: 9%;
+  border-radius: 25px;
+  padding: 5%;
+  margin-bottom: 10%;
+}
+.areas-lista{
+list-style: none;
+margin-top: 5px;
+}
+.areas-lista a{
+text-decoration: none;  
+color: grey;
+}
 .article{
-  color:black;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid black;
+color:grey;
+margin-top: 15px;
+margin-bottom: 15px;
+padding-bottom: 10px;
+/*border-bottom: 1px solid black;*/
 }
-.article:first-child{
+/*.article:first-child{
   padding-top: 10px;
   border-top: 1px solid black;
 
-}
-
+}*/
 .article h2{
-  font-size: 25px;
-  
+  font-size: 40px;
+  color: #4a4a4a;
 }
 
 #footer-pie{
@@ -230,20 +329,13 @@ margin-bottom: 10%;
   font-size: 15px ;
   /*line-height = interlineado*/
   line-height: 25px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   
 }
 .iconos-pie{
   font-size:40px; 
   color:white;
-  
 }
-
-/*.footer{
-  text-align: left ;
-  font-family: black;
-}*/
-
 .referencias-pie{
   text-decoration: none;
   text-align: right;
